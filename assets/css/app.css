@@ -1166,7 +1166,10 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:fo
     float: right;
     margin-right: 16.03631%;
     font-weight: bold; }
-
+  .activity-label {
+    float: left;
+    color: #aaa;
+    margin-top: .1125em; }
 .module-inbox {
   font-size: 0.875em;
   overflow: visible !important; }
@@ -1180,7 +1183,7 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:fo
   .module-inbox .row.read {
     color: #ccc; }
 
-.cell, .cell--icon {
+.cell, .cell--icon, .cell--icon--sm {
   position: relative;
   display: block;
   float: left;
@@ -1202,6 +1205,11 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:fo
         margin: -1px;
         border: 1px solid black;
         border-radius: 50%; }
+  .cell--icon--sm {
+    height: 24px;
+    width: 24px; }
+    .cell--icon--sm .icon-box-inline svg {
+      margin-bottom: -6px; }
   .cell--inner {
     position: absolute;
     margin: auto;
@@ -2344,7 +2352,7 @@ textarea {
   width: 20px;
   height: 16px; }
   .icon-box-inline svg {
-    margin-bottom: -4px; }
+    /*margin-bottom: -4px;*/ }
 
 .message-empty {
   margin: 0 auto;
@@ -2496,7 +2504,7 @@ textarea {
     .nav--button-tabs li.active {
       padding-top: 0.3125em; }
       .nav--button-tabs li.active a {
-        background: #b7433c; }
+        background-color: rgba(0,0,0,.1); }
 
 .headroom {
   -webkit-transform: translateZ(0px);

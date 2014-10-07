@@ -1470,6 +1470,7 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:fo
       margin-right: 0; }
     .form-cell.up-6:nth-child(6n), .up-6.list-cell:nth-child(6n), .up-6.list-cell-status:nth-child(6n), .up-6.list-cell-info:nth-child(6n), .up-6.panel-cell:nth-child(6n) {
       margin-right: 0; }
+    .button--tertiary.pull-right, .button--secondary.pull-right { margin-left: 1em!important; }
 
 .module-form .alert-box {
   margin: 0; }

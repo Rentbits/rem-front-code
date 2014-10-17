@@ -1222,6 +1222,8 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:fo
     width: 70%; }
   .cell p, .cell--icon p {
     margin: 0; }
+  .device-actions { top: 8px; }
+  .resident-actions { top: -8px; }
 
 .module-form {
   background-color: #f0f0f0; }
@@ -1278,7 +1280,7 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:fo
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 23.23176%;
+    /*width: 23.23176%;*/
     color: #aaa; }
     .form-row-label:after {
       content: "";
@@ -2384,6 +2386,14 @@ textarea {
     margin: 2em 0 2.5em 0;
     font-size: 0.875em;
     color: #aaa; }
+
+.message.welcome .message-title  {
+  margin-left: -95px; }
+  .message.welcome .message-title img {
+    position: relative;
+    top: 70px;
+    left: -66px;
+  }
 
 .tabs--content .message {
   padding: 0; }

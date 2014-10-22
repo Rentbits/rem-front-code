@@ -1222,7 +1222,7 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:fo
     width: 70%; }
   .cell p, .cell--icon p {
     margin: 0; }
-  .device-actions { top: 8px; }
+  .actions-icons { top: 8px; }
   .resident-actions { top: -8px; }
 
 .module-form {

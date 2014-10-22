@@ -15,7 +15,19 @@
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
     <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="stylesheet" href="../assets/slick/slick.css"/>
     <script src="../assets/js/vendor/modernizr-2.7.1.min.js"></script>
+    <style>
+.slider-wrapper { width: 60%; margin: 80px auto; }
+.offscreen { margin-left: -2000px; height: 1px; margin-top: 0; margin-bottom: 0; }
+.slider-wrapper .message-text, 
+.slider-wrapper .message-title,
+.slider-wrapper .message-img p { text-align: center; }
+.slider-wrapper .message-img img { display: inline-block; }
+.slider-wrapper .message-text { line-height: 1.75em; }
+/* slick css override */
+/*.slick-slide { border: 1px solid #000; }*/
+    </style>
   </head>
   <body>
     <!--[if lt IE 8]>
@@ -400,15 +412,61 @@
 
 
     <div class="content--primary" id="content--primary">
-      <!--  -->
       <div class="page--settings">
-
         <div class="content--secondary" id="content--secondary">
+        	
 		  	<div class="message welcome">
 				<h1 class="message-title"><img src="../assets/img/App-Screens.png">Hello Kathy, welcome to remotely.</h1>
-				<div class="message-text">Manage your smart apartments and the residents who live in them. </div>
-				<a href="#" class="button--tertiary">View Tour</a>	
+				<div class="message-text">Manage your smart apartments and the residents who live in them.</div>
+				<a href="#" class="button--primary start-tour">View Tour</a>	
           	</div>
+          	<div class="slider-wrapper">
+				<div class="slider single-item">
+					<div>
+						<div class="message-img">
+							<p><img src="../assets/img/tour-images/tour-slide-1.png"></p>
+						</div>
+					  	<h1 class="message-title">Installing Hardware</h1>
+					  	<div class="message-text">Select a hub & hardware set to install into a unit in your community.
+					  		Next, Install the smart hardware from the box into an existing unit.
+					  		Remember the pre-linked hub and hardware set must be used together.
+					  	</div>
+					</div>
+					<div>
+						<div class="message-img">
+							<p><img src="../assets/img/tour-images/tour-slide-2.png"></p>
+						</div>
+					  	<h1 class="message-title">Online remotely Account</h1>
+					  	<div class="message-text">Once you install a hub and hardware set into an existing unit,<br>
+update the unit details to reflect the actual unit number and building.
+					  	</div>
+					</div>
+					<div>
+						<div class="message-img">
+							<p><img src="../assets/img/tour-images/tour-slide-3.png"></p>
+						</div>
+					  	<h1 class="message-title">Adding a Resident</h1>
+					  	<div class="message-text">From the unit detail, go to the <b>Resident</b> tab and click the <b>Add a Resident</b> button,<br> Complete the <b>Add New Resident</b> form. You can also upload residents from a csv file.
+					  	</div>
+					</div>
+					<div>
+						<div class="message-img">
+							<p><img src="../assets/img/tour-images/tour-slide-4.png"></p>
+						</div>
+					  	<h1 class="message-title">Activating Resident’s Account</h1>
+					  	<div class="message-text">Once you add a resident to your community, an invetaion is sent to their email. From the invite email, they will create a password for their remotely account. Once a resient has a created a password their remotely account is activated. 
+					  	</div>
+					</div>
+					<div>
+						<div class="message-img">
+							<p><img src="../assets/img/tour-images/tour-slide-5.png"></p>
+						</div>
+					  	<h1 class="message-title">remotely App for Residents</h1>
+					  	<div class="message-text">Residents can download the remotley resident smart phone app or sign into the remotely resident web app. From the app they can control and automate the smart devices in their unit as well as any installed into common spaces. 
+					  	</div>
+					</div>
+				</div>
+			</div>
           	<div class="cell--icon device-actions">
         		<div class="icon-box fill-red">
 					<svg class="icon" viewBox="0 0 100 100">
@@ -794,13 +852,28 @@
 
 
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery-1.11.0.min.js"><\/script>')</script>-->
+  <script src="../assets/js/vendor/jquery-1.11.0.min.js"></script>
   <script src="../assets/js/application.js"></script>
-
   <script src="../assets/js/plugins.min.js"></script>
   <script src="../assets/js/scripts.min.js"></script>
+	
+	<script src="../assets/slick/slick.js"></script>
+	<script src="../assets/slick/scripts.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.slider-wrapper').addClass('offscreen');	
+			$('.single-item').slick();
+			// start tour 
+			$('.start-tour').click(function(event) {
+				/* Act on the event */
+				$(this).parent().hide( "fast", function() {
+   					$('.slider-wrapper').removeClass('offscreen');
+  				});
+			});
+		});
+	</script>
 
 </body>
 </html>

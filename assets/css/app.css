@@ -3570,6 +3570,15 @@ form input[type='radio'] {
     width: auto;
     max-width: 6.25em; }
 
+/* slick slider css / custom and overrides */
+.slider-wrapper { width: 60%; margin: 80px auto; }
+.offscreen { margin-left: -2000px; height: 1px; margin-top: 0; margin-bottom: 0; }
+.slider-wrapper .message-text, 
+.slider-wrapper .message-title,
+.slider-wrapper .message-img p { text-align: center; }
+.slider-wrapper .message-img img { display: inline-block; }
+.slider-wrapper .message-text { line-height: 1.75em; }    
+
 /* iCheck plugin Flat skin, blue
 ----------------------------------- */
 .input-checkbox, .input-radio {

@@ -1280,7 +1280,7 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:fo
     float: left;
     display: block;
     margin-right: 2.35765%;
-    /*width: 23.23176%;*/
+    width: 23.23176%;
     color: #aaa; }
     .form-row-label:after {
       content: "";

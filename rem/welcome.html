@@ -709,7 +709,7 @@ update the unit details to reflect the actual unit number and building.
   	<div class="modal-head">
     	<div class="form-row">
       		<div class="form-cell col-2">
-        		<div class="cell--icon">
+        		<div class="cell--icon fill-gray">
         			<div class="icon-box">
 						<svg class="icon" viewBox="0 0 100 100">
 					    	<use xlink:href="#svg-icon-42"></use>
@@ -730,11 +730,79 @@ update the unit details to reflect the actual unit number and building.
           			<label for="">What was the number on the hub & hardware box?</label>
         		</div>
         		<div class="form-cell col-3">
+	            	<select>
+	            		<option>1</option>
+	            	</select>
+        		</div>
+      		</div>
+	      	<!-- /.form-row -->
+	      	<div class="form-row">
+	      		<div class="form-cell col-9">
+          			<label for="">What unit was the hub & hardware box installed into?</label>
+        		</div>
+	      		<div class="form-cell col-3">
 	          		<div class="form-cell">
-	            		<select>
-	            			<option>1</option>
-	            		</select>
+	            		<input type="text">
 	          		</div>
+        		</div>
+        	</div>
+	      	<!-- /.form-row -->
+	      	<div class="form-row">
+	      		<div class="form-cell col-9">
+          			<label for="">What Building is that unit in?</label>
+        		</div>
+	      		<div class="form-cell col-3">
+	          		<div class="form-cell">
+	            		<input type="text">
+	          		</div>
+        		</div>
+        	</div>
+	      	<!-- /.form-row -->
+    	</div>
+    	<!-- /.modal-body -->
+
+	    <div class="modal-foot">
+	      	<div class="form-row">
+	        	<div class="form-cell">
+	          		<a href="#" class="button button--secondary">Update Unit</a>
+	          		<a href="#" class="button button--tertiary">Cancel</a>
+	        	</div>
+	      	</div>
+	    </div>
+	    <!-- /.modal-foot -->
+  	</form>
+</div>
+<!-- /.modal-update-smart-unit -->
+<div id="modal-control-smart-device" class="hide">
+  	<div class="modal-head">
+    	<div class="form-row">
+      		<div class="form-cell col-2">
+        		<div class="cell--icon fill-gray">
+        			<div class="icon-box">
+						<svg class="icon" viewBox="0 0 100 100">
+					    	<use xlink:href="#svg-icon-42"></use>
+						</svg>
+					</div>
+				</div>
+      		</div>
+      		<div class="form-cell col-10">
+        		<h1>Control a Smart Device</h1>
+      		</div>
+    	</div>
+  	</div>
+  	<!-- /.modal-head -->
+  	<form id="" action="" method="post" class="form">
+    	<div class="modal-body">
+      		<div class="form-row">
+        		<div class="form-cell col-8">
+          			<label for="">What unit is the smart device installed in?</label>
+        		</div>
+        		<div class="form-cell col-4">
+	            	<select>
+	            		<option>unit in building</option>
+	            		<option>unit in building</option>
+	            		<option>unit in building</option>
+	            	</select>
         		</div>
       		</div>
 	      	<!-- /.form-row -->
@@ -744,7 +812,7 @@ update the unit details to reflect the actual unit number and building.
 	    <div class="modal-foot">
 	      	<div class="form-row">
 	        	<div class="form-cell">
-	          		<a href="#" class="button button--secondary">View Unit Detail</a>
+	          		<a href="#" class="button button--secondary"View Smart Devices</a>
 	          		<a href="#" class="button button--tertiary">Cancel</a>
 	        	</div>
 	      	</div>
@@ -752,7 +820,56 @@ update the unit details to reflect the actual unit number and building.
 	    <!-- /.modal-foot -->
   	</form>
 </div>
-<!-- /.modal-form-1 -->
+<!-- /.modal-control-smart-device -->
+
+<div id="modal-share-smart-device" class="hide">
+  	<div class="modal-head">
+    	<div class="form-row">
+      		<div class="form-cell col-2">
+        		<div class="cell--icon fill-gray">
+        			<div class="icon-box">
+						<svg class="icon" viewBox="0 0 100 100">
+					    	<use xlink:href="#svg-icon-42"></use>
+						</svg>
+					</div>
+				</div>
+      		</div>
+      		<div class="form-cell col-10">
+        		<h1>Share Access to a Smart Lock</h1>
+      		</div>
+    	</div>
+  	</div>
+  	<!-- /.modal-head -->
+  	<form id="" action="" method="post" class="form">
+    	<div class="modal-body">
+      		<div class="form-row">
+        		<div class="form-cell col-8">
+          			<label for="">What unit is the smart lock installed in?</label>
+        		</div>
+        		<div class="form-cell col-4">
+	            	<select>
+	            		<option>unit in building</option>
+	            		<option>unit in building</option>
+	            		<option>unit in building</option>
+	            	</select>
+        		</div>
+      		</div>
+	      	<!-- /.form-row -->
+    	</div>
+    	<!-- /.modal-body -->
+
+	    <div class="modal-foot">
+	      	<div class="form-row">
+	        	<div class="form-cell">
+	          		<a href="#" class="button button--secondary">Continue</a>
+	          		<a href="#" class="button button--tertiary">Cancel</a>
+	        	</div>
+	      	</div>
+	    </div>
+	    <!-- /.modal-foot -->
+  	</form>
+</div>
+<!-- /.modal-share-smart-device -->
 
 <div id="modal-list-1" class="hide">
 

@@ -2447,7 +2447,6 @@ textarea {
   width: 100%;
   height: 48px;
   background: #e5544c no-repeat;
-  background-image: url("../svg/remotely-logo-white-01.svg");
   background-position: 1% center;
   -webkit-background-size: auto 65%;
           background-size: auto 65%; }
@@ -2457,6 +2456,8 @@ textarea {
     clear: both; }
   .nav--global a {
     text-align: center; }
+    .logo-wrapper { width: 160px; display: inline-block; margin-left: 1%; }
+    .logo { fill: #fff; margin-top: 7px; }
 
 .nav--button-tabs {
   position: absolute;

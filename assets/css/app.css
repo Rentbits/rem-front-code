@@ -1209,7 +1209,7 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:fo
     height: 24px;
     width: 24px; }
     .cell--icon--sm .icon-box-inline svg {
-      margin-bottom: -6px; }
+      margin-bottom: -4px; }
   .cell--inner {
     position: absolute;
     margin: auto;
@@ -2092,7 +2092,8 @@ textarea {
       overflow: hidden;
       height: auto; }
     .panel--data a {
-      display: block; }
+      display: block;
+      text-decoration: none; }
     .panel--data p {
       font-size: 0.625em; }
     .panel--data .button
@@ -2456,7 +2457,7 @@ textarea {
     clear: both; }
   .nav--global a {
     text-align: center; }
-    .logo-wrapper { width: 160px; display: inline-block; margin-left: 1%; }
+    .logo-wrapper { width: 160px; display: inline-block; margin-top: -63px; margin-left: 1%; }
     .logo { fill: #fff; margin-top: 7px; }
 
 .nav--button-tabs {

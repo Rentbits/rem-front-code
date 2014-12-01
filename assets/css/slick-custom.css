@@ -1,0 +1,6 @@
+/* custom slick style overrides */
+
+.slick-prev:before,
+.slick-next:before {
+	color: #59c8e0;
+}

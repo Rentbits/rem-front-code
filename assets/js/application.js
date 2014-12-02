@@ -5,6 +5,12 @@ if (typeof jQuery !== 'undefined') {
 		}).ajaxStop(function() {
 			$(this).fadeOut();
 		});
+		$.ajaxSetup({
+			cache: false,
+			beforeSend : function(xhr, setting){
+				setting.url = App.url(setting.url, '_ts', new Date().getTime());
+			}
+		});
 	})(jQuery);
 }
 
@@ -105,23 +111,19 @@ Application.prototype.ui = {
 				$(this).mask("? (999) 999-9999");
 			});
 		}
-	},
-	initNoAjaxCache: function(container) {
-		$.ajaxSetup({
-			cache: false,
-			beforeSend : function(xhr,setting){
-				var url = setting.url;
-				url = url.replace("&_=","&_ajax_redirect_ts=");
-				url = url.replace("?_=","?_ajax_redirect_ts=");
-				setting.url = url;
-			}
-		});
 	}
 };
 
 Application.prototype.ajax = {
 	success: function(data, textStatus, target) {
 		App.initUi(target);
+		var $target = $(target);
+		if ($target.children().size() == 1) {
+			var $child = $target.children();
+			if ($child.attr('id') == $target.attr('id')) {
+				$child.unwrap();
+			}
+		}
 	},
 	loaded: function(data, textStatus, target) {
 		var redirectPtrn = /^__redirect:\s*/;
@@ -153,15 +155,18 @@ Application.prototype.loadRemote = function(url, target, conf) {
 	});
 };
 
-Application.prototype.reload = function(target) {
-	var ajaxUrl = $(target).data('ajax');
-	if (ajaxUrl) {
-		App.loadRemote(ajaxUrl, target);
-	}
+Application.prototype.reload = function(target, success) {
+	$(target).each(function() {
+		var $el = $(this);
+		var ajaxUrl = $el.data('ajax');
+		if (ajaxUrl) {
+			App.loadRemote(ajaxUrl, $el, {success: success});
+		}
+	});
 };
 
-Application.prototype.gotoPage = function(url) {
-	if (History && History.pushState) {
+Application.prototype.gotoPage = function(url, skipHistory) {
+	if (History && History.pushState && (skipHistory === undefined)) {
 		if (url != window.location.pathname) {
 			History.pushState('', '', url);
 		} else {
@@ -178,6 +183,10 @@ Application.prototype.reloadPage = function() {
 	} else {
 		window.location.reload();
 	}
+};
+
+Application.prototype.setUrl = function(url) {
+	History.pushState({ _internal: true }, '', url);
 };
 
 Application.prototype.gotoLastPageMatch = function(pattern, defaultUrl) {
@@ -262,5 +271,29 @@ Application.prototype.calculateSessionTimeout = function() {
 			this.lSesToInterval = 0
 		}
 		window.location.replace("/rem/login?uri=" + window.location.pathname);
+	}
+};
+
+Application.prototype.urlParam = function(name, value) {
+	return this.url(window.location.search, name, value);
+};
+
+Application.prototype.url = function(url, name, value) {
+	var templateStr = '[\?&]' + name + '=([^&#]*)';
+	var template = new RegExp(templateStr);
+	var _value = template.exec(url);
+	if (_value == null) {
+		if (value === undefined) {
+			return null;
+		} else {
+			var s = '&';
+			if (url.indexOf('?') == -1) s = '?';
+			return url + s + name + '=' + encodeURIComponent(value)
+		}
+	} else if (value === undefined) {
+		return decodeURIComponent(_value[1]);
+	} else {
+		var s = _value[0].charAt(0)
+		return url.replace(template, s + name + '=' + encodeURIComponent(value));
 	}
 };

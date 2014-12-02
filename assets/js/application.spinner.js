@@ -1,3 +1,20 @@
+$.extend(Application.prototype.ui, {
+	initAjaxifySpinner: function(container) {
+		$('a[data-spinner]').each(function() {
+			var $a = $(this);
+			$a.bind('ajaxify-click', function(event, target) {
+				var $target = $(target);
+				App.showSpinner($target, $a.data('spinner'));
+				var _ajaxifyComplete = function() {
+					App.hideSpinner();
+					$target.unbind('ajaxify complete', _ajaxifyComplete);
+				};
+				$target.bind('ajaxify-complete', _ajaxifyComplete);
+			});
+		});
+	}
+})
+
 Application.prototype.showSpinner = function(target, conf) {
 	this.resetTimeout();
 	var $target = $(target);
@@ -9,6 +26,9 @@ Application.prototype.showSpinner = function(target, conf) {
 	var _offset = 2;
 	var _size;
 	var _conf = ['large', 'center', 'faded'];
+	if (!conf) {
+		conf = $target.data('spinner');
+	}
 	if (conf) {
 		_conf = conf.replace(/[\s,]+/g,' ').split(' ');
 	}
@@ -39,44 +59,53 @@ Application.prototype.showSpinner = function(target, conf) {
 			top: $target.position().top + _offset
 		});
 	} else if (_conf.indexOf('after') > -1 || _conf.indexOf('before') > -1) {
-		
+		$.extend(_css, { display: 'inline' });
+	} else if (_conf.indexOf('internal') > -1) {
+		var m1 = ($target.outerWidth() - _size) / 2;
+		var m2 = 140;
+		$.extend(_css, { position: 'relative',
+			margin: m1 + 'px ' + m2 + 'px'
+		});
 	} else {
+		var h = Math.min($(window.top).height() - $target.position().top, $target.height());
 		$.extend(_css, { position: 'absolute',
 			left: $target.position().left + $target.width() / 2 - (_size / 2),
-			top: $target.position().top + $target.height() / 2 - (_size / 2)
+			top: $target.position().top + h / 2 - _size / 2
 		});
 	}
 	if (_conf.indexOf('faded') > -1) {
 		$target.addClass('faded');
 	}
 	var spinnerId = 'spinner-' + Math.floor((Math.random() * 10000) + 1);
-	$target.data('spinner', spinnerId);
+	$target.data('_spinner', spinnerId);
 	
 	var $spinner = $('<div/>', { "class": 'spinner',
 		id: spinnerId,
 	}).css(_css);
 	if (_conf.indexOf('before') > -1) {
 		$target.before($spinner);
+	} else if (_conf.indexOf('internal') > -1) {
+		$target.append($spinner);
 	} else {
 		$target.after($spinner);
 	}
 };
 
 Application.prototype.hideSpinner = function(target) {
-	var $spinner = $('.spinner');
+	var $spinner = $('.spinner:not(.sticky)');
 	var $target
 	if (target) {
 		$target = $(target);
-		$spinner = $('#' + $target.data('spinner'));
+		$spinner = $('#' + $target.data('_spinner'));
 	}
 	if (!$target) {
-		if ($spinner.prev().data('spinner')) {
+		if ($spinner.prev().data('_spinner')) {
 			$target = $spinner.prev();
 		} else {
 			$target = $spinner.next();
 		}
 	}
 	$target.removeClass('faded');
-	$target.removeAttr('data-spinner');
+	$target.removeAttr('data-_spinner');
 	$spinner.remove();
 };

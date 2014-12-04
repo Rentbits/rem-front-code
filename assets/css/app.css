@@ -2453,11 +2453,11 @@ textarea {
           background-size: auto 65%; }
   .nav--global:after {
     content: "";
-    display: table;
     clear: both; }
   .nav--global a {
     text-align: center; }
-    .logo-wrapper { width: 160px; display: inline-block; margin-top: -63px; margin-left: 1%; }
+    .logo-wrapper { width: 160px; display: inline-block; margin-top: -63px;
+     margin-left: 1%; }
     .logo { fill: #fff; margin-top: 7px; }
 
 .nav--button-tabs {

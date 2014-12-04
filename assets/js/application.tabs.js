@@ -35,7 +35,7 @@ $.extend(Application.prototype.ui, {
 			});
 		});
 		if ($tabs.size() > 0) {
-			var hash = window.location.hash || App.urlParam('_tab');
+			var hash = App.getOriginalHash(window.location.hash) || App.urlParam('_tab');
 			if (hash && !$('div.tabs a[href=' + hash + "]").hasClass('disabled')) {
 				App.showTab(hash);
 			} else if ($defaultTab.size() > 0) {
@@ -58,7 +58,7 @@ Application.prototype.showTab = function(id) {
 		$tab.trigger('show-tab');
 		$('.tabs a.active').trigger('hide-tab');
 		$('.tabs a.active').removeClass('active');
-		window.location.hash = id;
+		window.location.hash = App.hideHash(id);
 		if ($tabContent.data('ajax')) {
 			$tabContent.empty();
 		}
@@ -88,6 +88,20 @@ Application.prototype.showFlowTab = function(id) {
 
 	App.showTab(id);
 };
+
+Application.prototype.hideHash = function(id) {
+	if (id && id.indexOf('#') != -1) {
+		id = id.replace('#', '#tab_');
+	}
+	return id;
+}
+
+Application.prototype.getOriginalHash = function(hash) {
+	if (hash && hash.indexOf('tab_') != -1) {
+		hash = hash.replace('tab_', '');
+	}
+	return hash;
+}
 
 Application.prototype.urlParam = function(name) {
 	var templateStr = '[\?&]' + name + '=([^&#]*)';

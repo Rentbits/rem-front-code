@@ -44,13 +44,19 @@ Dropdown.prototype.open = function() {
 };
 
 Dropdown.prototype.close = function() {
+	var closeFn = this.$trigger.data('dropdown-on-close');
+	if (window[closeFn]) {
+		window[closeFn](this.$dropdown);
+	}
 	this.$body.find('.dropdown-target').addClass('closed').removeClass('open');
 	$('.dropdown-backdrop').remove();
 };
 
 Dropdown.prototype.init = function() {
 	var self = this;
-	this.$target.find('a').click(function() { self.close(); });
+	if (!this.$dropdown.hasClass('lazy')) {
+		this.$target.find('a').click(function() { self.close(); });
+	}
 	if (!this.$dropdown.hasClass('sticky')) {
 		this.$target.mouseleave(function() { 
 			self.closeTimer = setTimeout(function() { self.close(); }, 2500);

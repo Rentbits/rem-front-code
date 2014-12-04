@@ -11,6 +11,7 @@ var _getModal = function() {
 };
 	
 Application.prototype.openModal = function(modal) {
+	if (modal === undefined) modal = '';
 	var $modal = _getModal();
 	var $modalContent = $modal.find('#md-modal-content')
 	if (modal.indexOf('#') == 0) { // id

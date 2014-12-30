@@ -387,7 +387,9 @@ th {
 .fill-gray {
   color: #cccccc;
   fill: #cccccc; }
-
+.fill-blue { 
+  fill: #7ED2EB; }
+a > .fill-blue:hover { fill: #a0dcef; }
 html,
 body {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -1207,9 +1209,10 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:fo
         border-radius: 50%; }
   .cell--icon--sm {
     height: 24px;
-    width: 24px; }
+    width: 24px;
+    min-height: 24px; }
     .cell--icon--sm .icon-box-inline svg {
-      margin-bottom: -4px; }
+      margin-bottom: -8px; }
   .cell--inner {
     position: absolute;
     margin: auto;
@@ -2356,7 +2359,7 @@ textarea {
   width: 20px;
   height: 16px; }
   .icon-box-inline svg {
-    /*margin-bottom: -4px;*/ }
+    margin-bottom: -4px; }
 
 .message-empty {
   margin: 0 auto;

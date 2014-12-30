@@ -228,7 +228,10 @@
 	L25.8,43.2z M63,40.7L19.7,84c-0.1,0.1-0.6,0.4-1.1,0.4c-1.1,0-2.5-0.8-3.9-2.2c-0.8-0.8-1.4-1.8-1.8-2.7c-0.6-1.4-0.1-2.2,0.1-2.5
 	l43.3-43.3c0.1-0.1,0.6-0.4,1.1-0.4c1.1,0,2.5,0.8,3.9,2.2C62.9,37.2,64.1,39.5,63,40.7z M58.6,38.5c-0.6-0.6-1.4-1-2-1
 	c-0.4,0-0.6,0.1-0.8,0.3l-10,10l3.5,3.5l10-10C60,40.6,59.5,39.3,58.6,38.5z" id="svg-icon-40">
-	<path d="M39,78.9L10.2,50.1l6.8-6.8l22,22l44.2-44.2l6.8,6.8L39,78.9z" id="svg-icon-41">
+	<path d="M39,78.9L10.2,50.1l6.8-6.8l22,22l44.2-44.2l6.8,6.8L39,78.9z" id="svg-icon-41"> <path d="M94.1,56c0,24.1-19.8,43.8-44.1,43.8C25.7,99.8,5.9,80.2,5.9,56c0-21.8,16.7-40.5,38.3-43.3c0.2-6.4,0.6-11.8,1.4-12.4
+	l0.5-0.2c2.8,0,28.1,16,28.1,19c0,0.5-0.3,1.1-1.2,1.9c-4.5,4.5-23.8,17.1-26.9,17.1l-0.5-0.1c-0.5-0.2-0.9-0.8-1.3-5.5
+	c-0.1-1.8-0.2-4.4-0.3-7.4C29.4,28,18.4,40.9,18.4,56c0,17.3,14.2,31.4,31.6,31.4c17.4,0,31.6-14.1,31.6-31.4c0-3.4,2.8-6.2,6.2-6.2
+	C91.3,49.9,94.1,52.6,94.1,56z" id="svg-icon-44">
   </defs></svg>
   <div class="page--container">
     <nav class="nav--global" id="nav--global">
@@ -533,10 +536,19 @@
               <label for="">Rent Ammount</label>
             </div>
             <div class="form-row-content">
-              <div class="form-cell col-3">
-                <!-- <span>$</span> -->
-                <input type="text" name="some_name" value="12, 345">
-              </div>
+              	<div class="form-cell col-3">
+	                <!-- <span>$</span> -->
+	                <input type="text" name="some_name" value="12, 345">
+	            </div>
+	            <div class="form-cell col-3">
+	                <div class="icon-box-inline">
+	                	<a href="#">
+							<svg class="icon fill-blue" viewBox="0 0 100 100">
+								 <use xlink:href="#svg-icon-44"></use>
+							</svg>
+						</a>
+					</div>
+              	</div>
             </div>
           </div>
           <div class="form-row">
@@ -949,97 +961,184 @@
   </form>
 </div>
 
-  <div id="modal-form-1" class="hide">
-
-  <div class="modal-head">
-    <div class="form-row">
-      <div class="form-cell col-2">
-        <div class="cell--icon circle"><div class="icon-box">
-  <svg class="icon" viewBox="0 0 100 100">
-    <use xlink:href="#svg-icon-14"></use>
-  </svg>
+<div id="modal-create-key" class="hide">
+  	<div class="modal-head">
+    	<div class="form-row">
+      		<div class="form-cell col-2">
+        		<div class="cell--icon circle">
+        			<div class="icon-box">
+						<svg class="icon" viewBox="0 0 100 100">
+						  <use xlink:href="#svg-icon-20"></use>
+						</svg>
+					</div>
+				</div>
+     		</div>
+      		<div class="form-cell col-10">
+        		<h1>Create Key Code</h1>
+      		</div>
+    	</div>
+  	</div>
+  	<!-- /.modal-head -->
+	<form id="" action="" method="post" class="form">
+    	<div class="modal-body">
+      		<div class="form-row">
+        		<div class="form-row-label">
+          			<label for="">Key Code</label>
+        		</div>
+        		<div class="form-row-content">
+          			<div class="form-cell up-2">
+            			<input type="text" name="" id="" value="444555" disabled>
+          			</div>
+          			<div class="form-cell up-2">
+	          			<div class="icon-box-inline">
+		                	<a href="#">
+								<svg class="icon fill-blue" viewBox="0 0 100 100">
+									 <use xlink:href="#svg-icon-44"></use>
+								</svg>
+							</a>
+						</div>
+        			</div>
+        		</div>
+      		</div>
+      		<!-- /.form-row -->
+      		<div class="form-row">
+        		<div class="form-row-label">
+          			<label for="">Name</label>
+        		</div>
+        		<div class="form-row-content">
+          			<div class="form-cell">
+            			<input type="text" name="" id="" value="" placeholder="enter name...">
+          			</div>
+        		</div>
+      		</div>
+      		<!-- /.form-row -->
+      		<!-- <div class="form-row">
+        		<div class="form-row-label">
+          			<label for="">Start Sharing</label>
+        		</div>
+        		<div class="form-row-content">
+          			<div class="form-cell up-2">
+            			<input type="text" name="" id="" value="A date value…" class="datepicker date start" data-provide="datepicker">
+          			</div>
+          			<div class="form-cell up-2">
+            			<input type="text" name="" id="" value="A time value…" class="timepicker time start">
+          			</div>
+        		</div>
+      		</div> -->
+      		<!-- /.form-row -->
+      		<!-- <div class="form-row">
+        		<div class="form-row-label">
+          			<label for="">Expire</label>
+        		</div>
+        		<div class="form-row-content">
+          			<div class="form-cell up-2">
+            			<input type="text" name="" id="" value="A date value…" class="datepicker date end" data-provide="datepicker">
+          			</div>
+          			<div class="form-cell up-2">
+            			<input type="text" name="" id="" value="A time value…" class="timepicker time end">
+          			</div>
+        		</div>
+      		</div> -->
+      		<!-- /.form-row -->
+    	</div>
+    	<!-- /.modal-body -->
+    	<div class="modal-foot">
+      		<div class="form-row">
+        		<div class="form-cell">
+          			<a href="#" class="button button--secondary">Create Key Code</a>
+          			<a href="#" class="button button--tertiary">Cancel</a>
+        		</div>
+      		</div>
+    	</div>
+    	<!-- /.modal-foot -->
+  	</form>
 </div>
+
+<div id="modal-form-1" class="hide">
+  	<div class="modal-head">
+    	<div class="form-row">
+      		<div class="form-cell col-2">
+        		<div class="cell--icon circle">
+        			<div class="icon-box">
+						<svg class="icon" viewBox="0 0 100 100">
+						  <use xlink:href="#svg-icon-14"></use>
+						</svg>
+					</div>
+				</div>
+     		</div>
+      		<div class="form-cell col-10">
+        		<h1>A Title</h1>
+      		</div>
+    	</div>
+  	</div>
+  	<!-- /.modal-head -->
+	<form id="" action="" method="post" class="form">
+    	<div class="modal-body">
+      		<div class="form-row">
+        		<div class="form-row-label">
+          			<label for="">Recipient Email</label>
+        		</div>
+        		<div class="form-row-content">
+          			<div class="form-cell">
+            			<input type="text" name="" id="" value="A value…">
+          			</div>
+        		</div>
+      		</div>
+      		<!-- /.form-row -->
+      		<div class="form-row">
+        		<div class="form-row-label">
+          			<label for="">Recipient Phone</label>
+        		</div>
+        		<div class="form-row-content">
+          			<div class="form-cell">
+            			<input type="text" name="" id="" value="A value…">
+          			</div>
+        		</div>
+      		</div>
+      		<!-- /.form-row -->
+      		<div class="form-row">
+        		<div class="form-row-label">
+          			<label for="">Start Sharing</label>
+        		</div>
+        		<div class="form-row-content">
+          			<div class="form-cell up-2">
+            			<input type="text" name="" id="" value="A date value…" class="datepicker date start" data-provide="datepicker">
+          			</div>
+          			<div class="form-cell up-2">
+            			<input type="text" name="" id="" value="A time value…" class="timepicker time start">
+          			</div>
+        		</div>
+      		</div>
+      		<!-- /.form-row -->
+      		<div class="form-row">
+        		<div class="form-row-label">
+          			<label for="">Expire</label>
+        		</div>
+        		<div class="form-row-content">
+          			<div class="form-cell up-2">
+            			<input type="text" name="" id="" value="A date value…" class="datepicker date end" data-provide="datepicker">
+          			</div>
+          			<div class="form-cell up-2">
+            			<input type="text" name="" id="" value="A time value…" class="timepicker time end">
+          			</div>
+        		</div>
+      		</div>
+      		<!-- /.form-row -->
+    	</div>
+    	<!-- /.modal-body -->
+    	<div class="modal-foot">
+      		<div class="form-row">
+        		<div class="form-cell">
+          			<a href="#" class="button button--secondary">Submit?</a>
+          			<a href="#" class="button button--tertiary">Cancel</a>
+        		</div>
+      		</div>
+    	</div>
+    	<!-- /.modal-foot -->
+  	</form>
 </div>
-      </div>
-      <div class="form-cell col-10">
-        <h1>A Title</h1>
-      </div>
-    </div>
-  </div>
-  <!-- /.modal-head -->
+<!-- /modal -->
 
-  <form id="" action="" method="post" class="form">
-    <div class="modal-body">
-      <!--  -->
-      <div class="form-row">
-        <div class="form-row-label">
-          <label for="">Recipient Email</label>
-        </div>
-        <div class="form-row-content">
-          <div class="form-cell">
-            <input type="text" name="" id="" value="A value…">
-          </div>
-        </div>
-      </div>
-      <!-- /.form-row -->
-
-      <div class="form-row">
-        <div class="form-row-label">
-          <label for="">Recipient Phone</label>
-        </div>
-        <div class="form-row-content">
-          <div class="form-cell">
-            <input type="text" name="" id="" value="A value…">
-          </div>
-        </div>
-      </div>
-      <!-- /.form-row -->
-
-      <div class="form-row">
-        <div class="form-row-label">
-          <label for="">Start Sharing</label>
-        </div>
-        <div class="form-row-content">
-          <div class="form-cell up-2">
-            <input type="text" name="" id="" value="A date value…" class="datepicker date start" data-provide="datepicker">
-          </div>
-          <div class="form-cell up-2">
-            <input type="text" name="" id="" value="A time value…" class="timepicker time start">
-          </div>
-        </div>
-      </div>
-      <!-- /.form-row -->
-
-      <div class="form-row">
-        <div class="form-row-label">
-          <label for="">Expire</label>
-        </div>
-        <div class="form-row-content">
-          <div class="form-cell up-2">
-            <input type="text" name="" id="" value="A date value…" class="datepicker date end" data-provide="datepicker">
-          </div>
-          <div class="form-cell up-2">
-            <input type="text" name="" id="" value="A time value…" class="timepicker time end">
-          </div>
-        </div>
-      </div>
-      <!-- /.form-row -->
-      <!--  -->
-    </div>
-    <!-- /.modal-body -->
-
-    <div class="modal-foot">
-      <div class="form-row">
-        <div class="form-cell">
-          <a href="#" class="button button--secondary">Submit?</a>
-          <a href="#" class="button button--tertiary">Cancel</a>
-        </div>
-      </div>
-    </div>
-    <!-- /.modal-foot -->
-  </form>
-
-</div>
 <div id="modal-list-1" class="hide">
   	<div class="modal-head">
     	<div class="form-row">
@@ -1286,6 +1385,7 @@
 
   <script src="../../assets/js/vendor/jquery-1.11.0.min.js"></script>
   <script src="../../assets/js/application.js"></script>
+  <script src="../../assets/js/application.tabs.js"></script>
   <script src="../../assets/js/plugins.min.js"></script>
   <script src="../../assets/js/scripts.min.js"></script>
 <!-- To open a modal, enter this in the console: App.uiModal.open('#automations-list-1'); -->

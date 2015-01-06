@@ -1826,6 +1826,8 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:fo
   width: 25%; }
 .tabs--horizontal-3-up li {
   width: 33.33333%; }
+  .tabs--horizontal-2-up li {
+  width: 50%; }
 .tabs--no-pad {
   padding: 0; }
 

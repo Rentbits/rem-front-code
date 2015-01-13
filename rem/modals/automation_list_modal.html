@@ -1,17 +1,49 @@
-<form id="" action="" method="post" class="form">
+<div id="auto-list" class="hide">
+  <div class="modal-head">
+    <div class="form-row">
+      <div class="form-cell col-1">
+        <div class="cell--icon circle">
+          <div class="icon-box"><svg class="icon" viewBox="0 0 100 100"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-40"></use></svg>
+        </div>
+      </div>
+    </div>
+    <div class="form-cell col-11">
+      <h1>Unit Automations</h1>
+    </div>
+  </div>
+  </div>
+  <form id="" action="" method="post" class="form">
     <div class="modal-body">
-      <div class="form-row">
-          <input type="datetime" name="" id="" value="Created by Residents" disabled>
+        <div class="form-row ac-header">
+          <b>Resident Created</b>
+        </div>
+      <section class="ac-container">
+      <div>
+        <input id="ac-1" name="accordion-1" type="checkbox" />
+        <label for="ac-1" class="enabled">At 10:30 PM </label>
+        <article>
+          <p>At 12:06 PM turn on the Orange Light and turn on the Green Light.</p>
+        </article>
       </div>
-      <div class="form-row">
-        <b>@10:30am</b> lock <b>Front Lock</b> and turn off <b>Green Lamp</b>
+      <div>
+        <input id="ac-2" name="accordion-1" type="checkbox" />
+        <label for="ac-2" class="enabled">Coming Home</label>
+        <article>
+          <p>If you tap Run Now, unlock the Front Door Lock and turn on the Orange Light and turn on the Green Light.</p>
+        </article>
       </div>
-      <div class="form-row">
-        <b>@10:30am</b> lock <b>Front Lock</b> and turn off <b>Green Lamp</b>
+      <div>
+        <input id="ac-3" name="accordion-1" type="checkbox" />
+        <label for="ac-3" class="disabled">Leaving Home</label>
+        <article>
+          <p>If you tap Run Now, lock the Front Door Lock and turn off the Orange Light and turn off the Green Light.</p>
+        </article>
       </div>
-      <div class="form-row">
-        <b>@10:30am</b> lock <b>Front Lock</b> and turn off <b>Green Lamp</b>
-      </div>
+    </section>
+    <div class="form-row ac-header">
+          <b>Manager Created</b>
+        </div>
+
     </div>
     <!-- /.modal-body -->
     <div class="modal-foot">

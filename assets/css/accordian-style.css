@@ -1,0 +1,86 @@
+.ac-header { 
+	border-bottom-width: 0;
+	background-color: #f9f9f9; }
+.ac-header b {
+	font-weight: normal;
+	font-size: .75em;
+	text-transform: uppercase;
+	color: #aaa;
+}
+.ac-container{
+	width: 100%;
+	margin: 0 auto;
+	text-align: left; }
+.ac-container label {
+	float: none!important;
+	width: 100%!important;
+	font-family: 'Helvetica', Arial, sans-serif;
+	padding: 10px 37px;
+	position: relative;
+	z-index: 20;
+	display: block;
+	height: 51px!important;
+	cursor: pointer;
+	color: #444;
+	line-height: 33px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-width: 1px 0; }
+.ac-container label span {
+	position: absolute;
+	display: inline-block;
+	right: 13px;
+	font-size: 11px;
+	border: 1px solid #ccc;
+	border-radius: 99px;
+	padding: 0 10px;
+	top: 7px; }
+.ac-container label:after {
+	position: absolute;
+	display: inline-block;
+	right: 13px;
+	font-size: 11px;
+	border: 1px solid #ccc;
+	border-radius: 99px;
+	padding: 0 10px;
+	top: 13px;
+	line-height: 2em; }
+.ac-container label:hover{
+	background: #def1f8 url(../img/patterns/accordian/arrow_down.png) no-repeat 8px center; }
+.ac-container label.enabled:after {
+	content: 'Enabled'; }
+	.ac-container label.disabled:after {
+	content: 'Disabled'; }
+.ac-container input:checked ~ label,
+.ac-container input:checked ~ article,
+.ac-container input:checked ~ article p {
+	background: #def1f8;
+	color: #000; }
+.ac-container input:checked ~ label {
+		font-weight: bold; }
+.ac-container input:checked ~ article p {
+	padding: 10px 37px }
+.ac-container input:checked ~ label:hover {
+	background: #def1f8 url(../img/patterns/accordian/arrow_up.png) no-repeat 8px center; }
+.ac-container input{
+	display: none; }
+.ac-container input ~ article{
+	margin-top: -1px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 10;
+	-webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	transition: height 0.3s ease-in-out, box-shadow 0.6s linear; }
+.ac-container article p{
+	font-family: 'Helvetica', Arial, sans-serif;
+	color: #777;
+	line-height: 23px;
+	font-size: 14px;
+	padding: 0 20px; }
+.ac-container input:checked ~ article{
+	height: 120px;
+	overflow: scroll; }

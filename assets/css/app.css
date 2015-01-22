@@ -723,7 +723,8 @@ body {
   display: table;
   clear: both; }
 .content--secondary {
-  max-width: 75em; }
+  max-width: 75em;
+  min-width: 960px; }
 
 .content--panel {
   padding: 2.35765%; }

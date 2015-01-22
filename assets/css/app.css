@@ -251,7 +251,7 @@ select {
  * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
-.button,
+/*.button,*/
 button,
 html input[type="button"],
 input[type="reset"],
@@ -453,7 +453,8 @@ input[type="email"].error, input[type="number"].error, input[type="password"].er
   border: 1px solid #cccccc;
   border-color: #59c8e0;
   background: white;
-  color: #59c8e0; }
+  color: #59c8e0;
+  cursor: pointer; }
   .button:hover, button:hover {
     background: #59c8e0;
     color: white; }

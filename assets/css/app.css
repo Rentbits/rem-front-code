@@ -251,6 +251,7 @@ select {
  * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
+.button,
 button,
 html input[type="button"],
 input[type="reset"],
@@ -2683,7 +2684,7 @@ textarea {
 
 .pull-left,
 .left {
-  float: left; }
+  float: left!important; }
 
 .disable {
   opacity: 0.5;

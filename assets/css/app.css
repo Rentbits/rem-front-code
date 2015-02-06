@@ -1055,7 +1055,6 @@ body {
     margin: 0.25em 0.375em; }
     .row--input-label.disabled {
       color: #7f7f7f; }
-
 .row--inner:after {
   content: "";
   display: table;
@@ -1479,7 +1478,10 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:fo
     .form-cell.up-6:nth-child(6n), .up-6.list-cell:nth-child(6n), .up-6.list-cell-status:nth-child(6n), .up-6.list-cell-info:nth-child(6n), .up-6.panel-cell:nth-child(6n) {
       margin-right: 0; }
     .button--tertiary.pull-right, .button--secondary.pull-right { margin-left: 1em!important; }
-
+  .form-cell label {
+    color: #aaaaaa; }
+  .form-cell label.text-right { 
+    text-align: right; }
 .module-form .alert-box {
   margin: 0; }
 .module-form .form-row-message {
@@ -1925,6 +1927,15 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:fo
     top: 0;
     bottom: 0;
     right: 0; }
+  .panel-head .model-unit:after { 
+    content: "Model";
+    font-size: 11px;
+    font-weight: normal;
+    color: #aaa;
+    border: 1px solid #ccc;
+    border-radius: 99px;
+    padding: 4px 10px;
+    margin-left: 6px; }
 .panel-body {
   padding: 0; }
 .panel-cell .dropdown {
@@ -3703,7 +3714,10 @@ a > .icon-box {
     content: "×"; }
   .close-circle:hover {
     background: #e5544c; }
-
+.close-circle.left {
+  margin-top: 5px; }
+.close-circle.left ~ span {
+  line-height: 1.75em; }
 .overflow-box {
   max-height: 25em;
   overflow-x: hidden;

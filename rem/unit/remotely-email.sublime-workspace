@@ -1,0 +1,539 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"row",
+				"row--cell"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"tet",
+				"text-align"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"remove",
+				"removeClass	.removeClass()"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"bord",
+				"border-bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"selected_items":
+		[
+			[
+				"syn html",
+				"Set Syntax: HTML"
+			],
+			[
+				"syn css",
+				"Set Syntax: CSS"
+			],
+			[
+				"syn ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"Snippet: html5",
+				"Snippet: html5"
+			],
+			[
+				"synhtm",
+				"Set Syntax: HTML"
+			],
+			[
+				"Snippet: ht",
+				"Snippet: html5"
+			],
+			[
+				"synht",
+				"Set Syntax: HTML"
+			],
+			[
+				"Snippet: ",
+				"Snippet: html5"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/assets/css/app.css",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/rem/unit/detail.html",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/rem/modals/lock_list_modal.html",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/rem/unit/list.html",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/rem/modals/automation_list_modal.html",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/assets/css/accordian-style.css",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/rem/modals/list_modal.html",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/rem/unit/key-codes.html",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/rem/resident/detail.html",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/partials/_doc-head.kit",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/partials/_nav-bar.kit",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/rem/unit/detail.kit",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/assets/svg/svg-defs.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/partials/_form-settings.kit",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/rem/settings.kit",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/rem/welcome.html",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/rem/unit/dashboard.html",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/assets/css/slick-custom.css",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/rem/settings.html",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/assets/slick/slick.css",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/assets/slick/slick.scss",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/rem/inbox.html",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/assets/js/application.tabs.js",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/assets/js/scripts.js",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/assets/js/application.js",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/rem/resident/import.html",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/rem/automation/create.html",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/rem/resident/add.html",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/rem/resident/list.html",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/rem/dashboard.html",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/rem/dashboard.kit",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/js/scripts.js",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/index.php",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/rem/unit/add.html",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/README.md",
+		"/Users/kellysandoval/Desktop/personal/msu/CDES 3400/homework/css-reset.css",
+		"/Users/kellysandoval/Desktop/personal/msu/CDES 3400/homework/hw2-wireframe-layout.html",
+		"/Users/kellysandoval/Desktop/personal/msu/CDES 3400/homework/wire-styles.css",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/.gitignore",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/package.json",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/sass/remotely/_icons.scss",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-31.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/sass/remotely/_typography.scss",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/sass/remotely/_helpers.scss",
+		"/Users/kellysandoval/Desktop/test/svg/svg-test.html",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-39.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-38.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-36.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-32.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-11.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-37.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-10.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-12.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-13.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-14.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-35.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-34.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-28.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-09.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-08.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-07.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-06.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-05.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-04.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-03.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-02.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-01.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-17.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-18.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-24.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-23.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-22.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-21.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-20.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-19.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-30.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-29.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-27.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-26.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-25.svg",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/dev/assets/svg/icon-33.svg",
+		"/Users/kellysandoval/Desktop/remotley/backend/example-code.html",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/rem/commonunit/create.html",
+		"/Users/kellysandoval/work/Rentbits/REM-Remotely/03--work/REM--frontend/build/rem/commonunit/detail.html",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/payments/store_settings.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/payments/store_settings-split-1.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/payments/marisol-payment-split-1.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/index.html",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/akumal/casa-salvaje.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/akumal/casa-alma-rosa.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/akumal/villa-palmeras.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/soliman-bay/casa-palmeras.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/akumal/casa-aurora.html",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/akumal/global-nav.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/soliman-bay/global-nav.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/tankah-listings.html",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/includes/send-email.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/includes/contact-form.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/soliman-bay/tropical-evergreen.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/soliman-bay/casa-aquamarine.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/soliman-listings.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/soliman-bay/tropical-evergreen.html",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/contactengine.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/contact.html",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/javascripts/app.js",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/includes",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/soliman-bay/casa-aquamarine.html",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/index.html",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/about.html",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/advertise-with-us.html",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/sftp-config.json",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/soliman-bay/nah-uxibal-main-house.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/soliman-bay/casa-yamulkan.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/rates/casa-yamulkan-rates.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/soliman-bay/los-tulipanes.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/rates/los-tulipanes-rates.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/rates/casa-aquamarine-rateTable.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/rates/casa-palmeras-rates.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/soliman-bay/nah-alux.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/soliman-bay/nah-uxibal-casitas.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/rates/nah-uxibal-main-rateTable.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/rates/nah-uxibal-casita-rateTable.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/soliman-bay/casa-canciones.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/rates/nah-alux-rateTable.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/soliman-bay/maya-jardin.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/rates/casa-conciones-rateTable.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/soliman-bay/casa-corazon-one.php",
+		"/Users/kellysandoval/Desktop/personal/home/marisol/root/marisolvacationrentals/rates/corazon-one-ratesTable.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".panel-head",
+			".form-cell label",
+			"text-align: right",
+			"disabled",
+			".content--secondary",
+			"#",
+			".button",
+			"../",
+			"svg-icon-43",
+			"up-4",
+			"tab-2",
+			"nav",
+			"welcome",
+			"button",
+			"head",
+			"headroom",
+			"head",
+			"cell--icon",
+			"svg-icon-38",
+			"icon-38",
+			"fill",
+			"cell--icon",
+			".icon",
+			"icon-box",
+			"cell--icon",
+			"message",
+			".button--tertiary",
+			"/assets",
+			"/assets/",
+			"pull-right",
+			".cell--icon",
+			".icon-box",
+			".circle",
+			".icon",
+			".status-label",
+			"timestamp",
+			"icon-box",
+			".form-cell",
+			"icon-box",
+			"svg-icon-38",
+			"svg",
+			"svg-icon-37",
+			"id",
+			"../..",
+			"../../",
+			"/assets",
+			"span",
+			"checkbox",
+			"Casa Alma Rosa",
+			"Casa Aurora",
+			"los-tulipanes-Rates",
+			"casaYamulkan-Rates",
+			"casa-palmeras.html",
+			"palmeras-rates",
+			"palmeras",
+			"Palmeras",
+			"palmeras",
+			"Casa",
+			"casa",
+			"Casa",
+			"casa",
+			"Casa",
+			"casa",
+			"Casa",
+			"casa",
+			"Casa",
+			"casa",
+			"Casa",
+			"casa",
+			"Casa",
+			"casa",
+			"Casa",
+			"casa",
+			"html",
+			"nau-uxibal-main-rates",
+			"nau-uxibal-casitas-rates",
+			"html",
+			"nau-alux-rates",
+			"html",
+			"casa-corazon-one",
+			"casa-caciones.html",
+			"mayaJardin-Rates",
+			"maya-jardin.html",
+			"casa-aquamarine.html",
+			"aquamarine",
+			"casa-aquamarine-Rates",
+			"aquamarine",
+			"Aquamarine",
+			"aquamarine",
+			"Aquamarine",
+			"aquamarine",
+			"Aquamarine",
+			"aquamarine",
+			"soliman-listings.html",
+			"casa-aquamarine-Rates",
+			"required",
+			"Playa Belleza",
+			"tankah-bay/play-belleza.html",
+			"caracol",
+			"Interview",
+			"header",
+			"max-",
+			"screen",
+			"*/\n",
+			"script",
+			"document",
+			"<!"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 27.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"a",
+				"build/assets/css/app.css"
+			],
+			[
+				"app",
+				"build/assets/css/app.css"
+			],
+			[
+				"css",
+				"build/assets/css/app.css"
+			],
+			[
+				"casa",
+				"marisolvacationrentals/tankah-bay/casa-caracol.html"
+			],
+			[
+				"cover",
+				"cover-letters.php"
+			],
+			[
+				"app.c",
+				"css/app.css"
+			],
+			[
+				"interthe",
+				"interview/the-interview.php"
+			],
+			[
+				"intermil",
+				"interview/military-experience-translated.php"
+			],
+			[
+				"intersec",
+				"interview/interview-section-nav.php"
+			],
+			[
+				"intermod",
+				"interview/interview-module-landing.php"
+			],
+			[
+				"app.css",
+				"assets/css/app.css"
+			],
+			[
+				".css",
+				"assets/css/app.css"
+			],
+			[
+				"ran",
+				"random.htm"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 281.0,
+	"status_bar_visible": true
+}

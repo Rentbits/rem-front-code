@@ -2405,8 +2405,10 @@ textarea {
   .message-text {
     margin: 2em 0 2.5em 0;
     font-size: 0.875em;
-    color: #aaa; }
-
+    color: #aaa;
+    line-height: 1.5em; }
+  .message.welcome {
+    padding-top: 0!important; }
 .message.welcome .message-title  {
   margin-left: -95px; }
   .message.welcome .message-title img {
@@ -2641,9 +2643,13 @@ textarea {
 .nav--search {
   position: relative;
   height: 3.0625em;
-  background: #e5e5e5;
+  background: #ffffff;
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc; }
+  .nav--search img {
+    height: 24px;
+    width: 24px;
+    margin: 10px 0 10px 28px; }
   .nav--search-field {
     position: absolute;
     top: 0;
@@ -2651,13 +2657,14 @@ textarea {
     right: 0;
     left: 0;
     margin: auto;
+    margin-left: 54px;
     padding: 0.875em;
     width: 98%;
     height: 50%;
-    border: 1px solid #e5e5e5; }
+    border: none!important; }
     .nav--search-field:focus {
       outline: none;
-      border: 1px solid #cccccc; }
+      border: none; }
 
 .nav--local-community-label {
   display: block;

@@ -2330,7 +2330,8 @@ textarea {
   top: 85px;
   left: 191px;
   z-index: 90000;
-  width: 1078px;
+  /*width: 1078px;*/
+  width: 80%;
   background: rgba(255, 255, 255, 0.98); }
   .module--autocomplete li {
     color: #aaa;

@@ -814,11 +814,28 @@ body {
           -ms-transform: translateY(-8px);
               transform: translateY(-8px);
       opacity: 0; }
+      .dropdown-target .cancel {
+        color: #ea766f;
+
+      }
+        .dropdown-target .cancel:before {
+          content: "×";
+          vertical-align: text-top;
+          padding-right: 6px;
+        }
   .dropdown-trigger {
     font-size: inherit;
     color: inherit;
     text-decoration: none;
     border-color: inherit; }
+  .form-row .dropdown-trigger {
+    font-size: 1.5em!important;
+    color: inherit;
+    text-decoration: none;
+    border-color: inherit;
+    font-family: georgia, serif; }
+  .form-row .dropdown-trigger:hover {
+    color: #59C8E0; }
   .dropdown-caret {
     display: inline-block;
     margin: 0 4px 0 2px;
@@ -1918,7 +1935,7 @@ input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:fo
   margin-bottom: 2.35765%; }
 .panel-head {
   padding: 0;
-  background: #f0f0f0;
+  background: #f0f0f0!important;
   border-radius: 4px 4px 0 0; }
   .panel-head .button--tertiary {
     position: absolute;
